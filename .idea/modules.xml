@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IHaveControl/IHaveControl.iml" filepath="$PROJECT_DIR$/IHaveControl/IHaveControl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/IHaveControlProject.iml" filepath="$PROJECT_DIR$/IHaveControlProject.iml" />
+    </modules>
+  </component>
+</project>
+

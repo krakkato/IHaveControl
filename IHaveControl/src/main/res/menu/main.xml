@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity" >
+
+    <item android:id="@+id/add_ssh_confs"
+        android:title="Add SSH Configuration"
+        android:showAsAction="never" />
+    <item android:id="@+id/clear_ssh_confs"
+        android:title="Clear SSH Configurations"
+        android:showAsAction="never" />
+    <item android:id="@+id/auto_populate"
+        android:title="DEV: Autopopulate"
+        android:showAsAction="never" />
+</menu>

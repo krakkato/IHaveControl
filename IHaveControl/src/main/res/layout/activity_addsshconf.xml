@@ -1,0 +1,212 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:id="@+id/nameText"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="26dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameEdit"
+            android:inputType="textNoSuggestions"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/nameText"
+            android:textSize="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User:"
+            android:id="@+id/userText"
+            android:layout_below="@+id/nameText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="26dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/userEdit"
+            android:inputType="textNoSuggestions"
+            android:layout_toRightOf="@+id/nameText"
+            android:layout_below="@+id/nameText"
+            android:textSize="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Server:"
+            android:id="@+id/serverText"
+            android:layout_below="@+id/userText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="26dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/serverEdit"
+            android:inputType="textNoSuggestions"
+            android:layout_toRightOf="@+id/nameText"
+            android:layout_below="@+id/userText"
+            android:textSize="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Port:"
+            android:id="@+id/portText"
+            android:layout_below="@+id/serverText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="26dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/portEdit"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/nameText"
+            android:layout_below="@+id/serverText"
+            android:textSize="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Authentication:"
+            android:layout_below="@+id/portText"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="16dp"
+            android:paddingBottom="0dp"
+            android:textSize="26dp"
+            android:id="@+id/auth" />
+
+        <RadioGroup
+            android:layout_below="@id/auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:paddingRight="8dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:id="@+id/passwordButton"
+                android:textSize="20dp"
+                android:checked="true"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Private Key"
+                android:id="@+id/privkeyButton"
+                android:textSize="20dp"
+                android:layout_marginTop="4dp"
+                android:checked="false" />
+        </RadioGroup>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/passwordEdit"
+            android:inputType="textPassword|textNoSuggestions"
+            android:layout_alignTop="@+id/radioGroup"
+            android:textSize="18dp"
+            android:layout_alignRight="@+id/portEdit"
+            android:layout_alignEnd="@+id/portEdit"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/privkeyEdit"
+            android:textSize="18dp"
+            android:enabled="false"
+            android:clickable="false"
+            android:inputType="textNoSuggestions"
+            android:layout_below="@+id/passwordEdit"
+            android:layout_toRightOf="@+id/radioGroup"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Command:"
+            android:id="@+id/cmdText"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:paddingRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="26dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmdEdit"
+            android:inputType="textNoSuggestions"
+            android:layout_toRightOf="@+id/cmdText"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="8dp"
+            android:textSize="24dp"
+            android:layout_marginBottom="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+       <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:id="@+id/saveButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:onClick="saveAndReturn" />
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jzlib-0.1.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/IHaveControl/libs/jzlib-0.1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

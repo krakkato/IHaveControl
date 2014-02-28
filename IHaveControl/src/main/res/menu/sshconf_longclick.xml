@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ssh_conf_connect"
+        android:title="Connect"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/ssh_conf_edit"
+        android:title="Edit"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/ssh_conf_delete"
+        android:title="Delete"
+        android:showAsAction="never" />
+</menu>

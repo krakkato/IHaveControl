@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.staticfloat.ihavecontrol"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:backupAgent="com.staticfloat.ihavecontrol.ControlBackupAgent">
+
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAISxk0onTnSDM3d32C8oTmNee1sxLxJxBlT9JDPA" />
+        <activity
+            android:name="com.staticfloat.ihavecontrol.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.staticfloat.ihavecontrol.EditSSHConfActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"
+            android:label="Edit SSH Configuration"
+            android:parentActivityName="com.staticfloat.ihavecontrol.MainActivity">
+            <intent-filter>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
