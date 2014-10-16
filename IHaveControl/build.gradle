@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:0.8.+'
+        classpath 'com.android.tools.build:gradle:0.9.+'
     }
 }
 apply plugin: 'android'
@@ -14,7 +14,7 @@ repositories {
 
 android {
     compileSdkVersion 19
-    buildToolsVersion "19.0.0"
+    buildToolsVersion '19.0.3'
 
     defaultConfig {
         minSdkVersion 14
@@ -23,6 +23,7 @@ android {
 }
 
 dependencies {
-	compile 'com.android.support:support-v13:+'
-    compile files('libs/jsch-0.1.50.jar', 'libs/jzlib-0.1.2.jar' )
+    compile 'com.android.support:support-v13:+'
+    compile files('libs/jsch-0.1.50.jar')
+    compile files('libs/jzlib-0.1.2.jar')
 }
