@@ -33,8 +33,6 @@
             android:windowSoftInputMode="adjustResize"
             android:label="Edit SSH Configuration"
             android:parentActivityName="com.staticfloat.ihavecontrol.MainActivity">
-            <intent-filter>
-            </intent-filter>
         </activity>
     </application>
 
